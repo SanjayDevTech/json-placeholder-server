@@ -10,6 +10,7 @@ if (!verifyRule(rules)) {
 }
 
 const app = express();
+const port = process.env.PORT || config.port;
 
 app.get("/", (req, res) => {
   if (config.showStatus) {
@@ -49,6 +50,6 @@ for (let collection of rules["collections"]) {
   });
 }
 
-app.listen(config.port, () => {
-  console.log("Server started");
+app.listen(port, () => {
+  console.log(`Server started at port => ${port}`);
 });
