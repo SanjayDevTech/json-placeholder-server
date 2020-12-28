@@ -1,0 +1,7 @@
+{
+  "name": "JSON Placeholder Server",
+  "description": "Json fake api",
+  "repository": "https://github.com/SanjayDevTech/json-placeholder-server",
+  "logo": "https://json-placeholder-server.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
+}

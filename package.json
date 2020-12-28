@@ -17,7 +17,7 @@
     "expressjs"
   ],
   "author": "SanjayDevTech",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/SanjayDevTech/json-placeholder-server/issues"
   },
