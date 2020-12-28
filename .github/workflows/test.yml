@@ -9,5 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install npm modules
+        run: npm install
       - name: Run test
         run: node test.js
