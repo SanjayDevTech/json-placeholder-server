@@ -24,6 +24,7 @@
   "homepage": "https://github.com/SanjayDevTech/json-placeholder-server#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   }
 }

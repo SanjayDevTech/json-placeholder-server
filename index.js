@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import rules from "./db-rules.js";
 import { verifyRule } from "./utils.js";
 import { db } from "./db.js";
@@ -10,6 +11,7 @@ if (!verifyRule(rules)) {
 }
 
 const app = express();
+app.use(cors());
 const port = process.env.PORT || config.port;
 
 app.get("/", (req, res) => {
