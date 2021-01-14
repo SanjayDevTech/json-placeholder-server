@@ -6,13 +6,16 @@
 */
 
 const rules = {
-  collections: ["posts", "users"],
+  collections: ["posts", "users", "foods"],
   rules: {
     posts: {
       key: "id",
     },
     users: {
       key: "user_id",
+    },
+    foods: {
+      key: "id",
     },
   },
 };
