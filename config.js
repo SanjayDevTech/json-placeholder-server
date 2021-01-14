@@ -6,7 +6,7 @@
 
 const config = {
   port: 3000,
-  showStatus: true,
+  showStatus: false,
 };
 
 export default config;
