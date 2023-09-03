@@ -1,4 +1,4 @@
-export let db = {
+export const db = {
   posts: [
     { id: "1", title: "Demo 01" },
     { id: "2", title: "Demo 02" },
