@@ -39,6 +39,8 @@ const build = async () => {
             console.log(`Data written to ${itemPath}`);
         }
     }
+    await fs.writeFile('./build/index.json', JSON.stringify(dbData));
+    console.log('Data written to ./build/index.json');
 };
 
 build();
