@@ -16,7 +16,12 @@ const build = async () => {
     if (dbRules.collections.length !== Object.keys(db).length) {
         console.warn('collections mentioned in rules is not matched with db.js. Will only build collections mentioned in rules.');
     }
-    await fs.rm('./build', { recursive: true });
+    try {
+        await fs.access('./build');
+        await fs.rm('./build', { recursive: true });
+    } catch (error) {
+        // ignore
+    }
     await fs.mkdir('./build');
     const collections = dbRules.collections;
     const rules = dbRules.rules;
